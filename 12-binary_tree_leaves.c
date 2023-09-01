@@ -5,8 +5,7 @@
  *
  * Description: long description
  *
- * @argument_1: argument_1 description
- * @argument_2: argument_2 description
+ * @tree: argument_1 description
  *
  * Return: return description
  */
