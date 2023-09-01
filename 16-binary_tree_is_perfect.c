@@ -11,10 +11,12 @@
  */
 int traverse_node(const binary_tree_t *tree)
 {
-	if (tree == NULL || (tree->left == NULL && tree->right == NULL))
+	if (tree == NULL)
+		return (0);
+	if (tree->left == NULL && tree->right == NULL)
 		return (1);
 	if (tree->right != NULL && tree->left != NULL)
-		return (traverse_node(tree->right) && traverse_node(tree->left));
+		return (1 + traverse_node(tree->right) + traverse_node(tree->left));
 	return (0);
 }
 
